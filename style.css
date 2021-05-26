@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Source+Sans+Pro:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Girassol', cursive;
+    background: #424242;
+    /* background: rgb(209, 196, 15); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    height: 270px;
+    min-height: 250px;
+    width: 470px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.card img {
+    height: 380px;
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+.card h2 {
+    margin-top: 20px;
+    color: rgb(236, 185, 18);
+}
+.card p, a {
+    font-family:'Source Sans Pro', sans-serif;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.card p {
+    width: 200px;
+    margin-bottom: 25px;
+}
+.card a {
+    text-decoration: none;
+    color: #0c0200;
+    text-transform: uppercase;
+    background-color: rgb(236, 185, 18);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: #0c0200;
+    background-color: #fff;
+}
+
+.card:hover img {
+    left: 80%;
+    height: 420px;
+    top: 42%;
+}
+
+.card:hover h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.card:hover p,
+.card:hover a {
+    opacity: 1;
+}
